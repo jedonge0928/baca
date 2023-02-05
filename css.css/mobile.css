@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color: black;}
+
+@media all and (max-width:759px){
+    header{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(168, 231, 231);
+    }
+    #in_header{
+        margin: 0 auto;
+        width: 100%;
+        height: 80px;
+        position: relative;
+    }
+    
+    #logo{
+        margin-left: 35%;
+        width: 30%;
+        height: 80px;
+        font: 900 30px/80px '';
+        /*background-color: antiquewhite;*/
+    }
+    #logo img{
+        object-fit: fill;
+    }
+    #gnb{
+      display: none;
+    }
+    #gnb li{
+       display: none;
+    }
+    /*gnb click*/
+    #gnb li:hover{
+        display: none;
+    }
+    /*gnb click*/
+    #menu{
+        background-color: ;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .top_menu{
+        float: left;
+        width: 25%;
+        font: 900 16px/80px '';
+        text-align: center; 
+        transition: 0.5s;
+        position: relative;
+        background-color: #ffffff;
+    }
+    
+    .top_menu::after{
+        width: 0;
+        height: 4px;
+        display: block;
+        content: '';
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5S;
+    }
+    /*top_menu click*/
+    .top_menu:hover::after{
+        width: 100%;
+    }
+    .top_menu:nth-child(1):hover::after{
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+    }
+    /*
+    .top_menu:nth-child(2):hover::after{
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+    }
+    .top_menu:nth-child(3):hover::after{
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+    }*/
+    .top_menu:nth-child(4):hover::after{
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+    }
+    
+    /*서브메뉴 클릭시*/
+    .sub_menu{
+        width: 100%;
+        height: 0;
+        transition: 0.5s;
+        font: 14px/50px '';
+        overflow: hidden;
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+        box-sizing: border-box;
+    }
+    
+    .sub_menu li{
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    
+    .sub_menu li:nth-child(4){
+        border-bottom: 1px solid gainsboro;
+    }
+      /* hover */
+      .top_menu:hover{
+        background-color: rgb(255, 255, 255);
+    }   
+    
+    .sub_menu li:hover{
+        background-color: rgb(205, 205, 205);
+    }
+    
+    .top_menu:hover .sub_menu{
+        height: 150px;
+    }
+    .top_menu:nth-child(4):hover .sub_menu{
+        height: 200px;
+    }
+    /*header*/
+    /*banner*/
+    #banner{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+    /*banner*/
+    /*container*/
+    
+    #sec01{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 700px;
+        margin: 80px auto;
+    }
+    .container{
+        width: 100%;
+        height: 500px;
+        padding-top: 50px;
+    }
+    #con1{
+        margin: 0 12%;
+        float: left;
+        width: 400px;
+        height: 300px;
+        border: 1px solid gray;
+    }
+    #con1:nth-child(2){
+        margin: 50px 12% 0;
+    }
+    #con1 h1{
+        color: white;
+        line-height: 60px;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+    }
+    .box{
+        width: 100%;
+    }
+    .box li{
+        margin: 5px 10px;
+        font: 500 16px/50px '';
+        border-bottom: 1px solid rgb(238, 238, 238);
+        color: gray;
+    }
+    .box li a{
+        margin-left: 10px;
+    }
+    .box li a:hover{
+        color: gainsboro;
+        
+    }
+    /*container*/
+    /*footer start*/
+    #footer {
+        height: 120px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000;
+    }
+    
+    .footer_wrap {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .sns {
+        margin-top: 20px;
+        width: 100%;
+        position: absolute;
+        left: 35%;
+        right: 0;
+    }
+
+.sns li {
+    float: left;
+    padding-left: 12px;
+}
+
+.sns img {
+    opacity: 0.2;
+}
+
+.sns img:hover {
+    opacity: 0.7;
+}
+    
+    .footer_text {
+        width: 100%;
+        line-height: 30px;
+        padding-top: 70px;
+        color: rgb(95, 95, 95);
+    }
+    
+       
+      
+}
